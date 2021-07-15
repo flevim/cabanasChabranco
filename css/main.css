@@ -13,7 +13,17 @@ main {
 }
 
 .altura-comp {
-    padding: 110px 0; 
+    padding-top: 5rem; 
+}
+
+.divider-text-image {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    height: 0.2rem;
+    max-width: 12rem;
+    margin: 1.5rem auto;
+    background-color: #b4b4b4;
+    opacity: 1;
 }
 
 .btn {
@@ -42,6 +52,11 @@ main {
     font-weight: 600 !important;
     background-color: #e8aa14 !important;
     border-color: #e8aa14 !important;
+}
+
+.btn-orange:hover {
+    background-color: #db9c04 !important;
+    border-color: #db9c04 !important;
 }
 
 label {
@@ -165,6 +180,61 @@ label.error {
     
 }
 
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .3;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 5em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-fade .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.carousel-fade .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/* Fin sección carrusel */ 
+
 
 /* sección fotos-imagen */
 
@@ -197,6 +267,19 @@ label.error {
     
 }
 
+
+/* Mapa de ubicación */
+.size-map {
+    width: 1300px; 
+    height: 600px;
+    border: 0;
+} 
+
+.size-map-md {
+    width: 500px; 
+    height: 400px; 
+    border: 0;
+}
 
 /* Footer */ 
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
@@ -340,6 +423,8 @@ a {
 }
 
 /* fin footer */ 
+
+
 
 /* Inicio Somos */ 
 
@@ -616,3 +701,41 @@ hr.divider {
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
+
+
+  /* 
+  SECCIÓN MEDIAS QUERY
+  */
+
+  /********************************/
+/*          Media Queries       */
+/********************************/
+
+
+
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+
+@media screen and (max-width: 979px){
+    .size-map {
+        width: 600px; 
+        height: 450px;
+        border: 0;
+    } 
+}
+
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }
+    .altura-comp { padding: 50px 0;  }    
+    .size-map {
+        width: 400px; 
+        height: 300px;
+        border: 0;
+    } 
+    .size-map-md {
+        width: 400px;
+        height: 300px;
+        border: 0;
+    }
+}
