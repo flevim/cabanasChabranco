@@ -52,6 +52,7 @@ main {
     font-weight: 600 !important;
     background-color: #e8aa14 !important;
     border-color: #e8aa14 !important;
+    text-shadow: none;
 }
 
 .btn-orange:hover {
@@ -141,7 +142,9 @@ label.error {
 
 
 
-/* Sección carrusel */
+/********************************/
+/*           Carrusel           */
+/********************************/
 
 .img-carrusel {
     width: auto; 
@@ -235,6 +238,13 @@ label.error {
 
 /* Fin sección carrusel */ 
 
+/********************************/
+/*            Listado de cabañas           */
+/********************************/
+.card-title{
+    text-decoration:none !important;
+    color: black;
+}
 
 /* sección fotos-imagen */
 
@@ -259,7 +269,7 @@ label.error {
 
 .service-icons { 
     width: 75px;
-    text-align: center
+    margin-left: 3rem;
 }
 
 .title-service {
@@ -281,7 +291,9 @@ label.error {
     border: 0;
 }
 
-/* Footer */ 
+/********************************/
+/*          Footer        */
+/********************************/
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
 
 ul {
@@ -315,31 +327,17 @@ h4 {
     color:#363940
 }
 a {
-    color:#5867dd
+    color:#e8aa14;
+    
+}
+
+a:link {
+    text-decoration:none;
 }
 .no-padding {
     padding:0!important
 }
-.go_top {
-    line-height:40px;
-    cursor:pointer;
-    width:40px;
-    background:#5867dd;
-    color:#fff;
-    position:fixed;
-    -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
-    box-shadow:0 4px 4px rgba(0,0,0,.1);
-    -webkit-border-radius:50%;
-    border-radius:50%;
-    right:-webkit-calc((100% - 1140px)/ 2);
-    right:calc((100% - 1140px)/ 2);
-    z-index:111;
-    bottom:80px;
-    text-align:center
-}
-.go_top span {
-    display:inline-block
-}
+
 .footer-big {
     padding:105px 0 65px 0
 }
@@ -363,7 +361,7 @@ a {
     transition:.3s
 }
 .footer-menu ul li a:hover {
-    color:#5867dd
+    color:#e8aa14;
 }
 .footer-menu--1 {
     width:100%
@@ -385,7 +383,7 @@ a {
     color:#999
 }
 .mini-footer p a {
-    color:#5867dd
+    color:#e8aa14;
 }
 .mini-footer p a:hover {
     color:#34bfa3
@@ -410,7 +408,7 @@ a {
     padding-right:12px
 }
 .widget-about .contact-details li a {
-    color:#5867dd
+    color:#e8aa14;
 }
 @media (max-width:991px) {
  .footer-menu {
@@ -422,6 +420,66 @@ a {
     color: white; 
 }
 
+.svg-inline--fa {
+    vertical-align: -0.200em;
+  }
+  
+  .rounded-social-buttons {
+    margin-left: 20px;
+  }
+  
+  .rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-twitter, .fa-facebook, .fa-linkedin, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+  }
+  
+  
+  .rounded-social-buttons .social-button.instagram {
+    background: #125688;
+  }
+  
+  .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+  }
+
 /* fin footer */ 
 
 
@@ -430,7 +488,7 @@ a {
 
 /* header */ 
 .background-section {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cabañas/diuca/fuera3.jpeg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cabanas/diuca/fuera3.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -480,8 +538,8 @@ hr.divider {
 
 /* inicio misión */ 
 .title-us {
-    color: #f4623a;
-    font-weight: 600;
+    color: #e8aa14;
+    font-weight: 700;
 }
 
 .subtitle-us {
@@ -489,7 +547,8 @@ hr.divider {
 }
 
 .desc-us {
-    color: black; 
+    color: black;
+     
     font-size: 20px;
 }
 
@@ -500,7 +559,7 @@ hr.divider {
 /* Inicio css reservas */ 
 
 .background-section-reservation {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cabañas/diuca/fuera3.jpeg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cabanas/diuca/fuera3.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -600,9 +659,13 @@ hr.divider {
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-  font-size:30px;
+    font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+    z-index:100;
+}
+
+.float:hover {
+    background-color: #25d366;
 }
 
 .my-float{
@@ -702,6 +765,12 @@ hr.divider {
     opacity: 0.3;
   }
 
+  /* Sección Cabañas */ 
+  .card-header {
+      background-color: #ffffff !important;
+      color: black !important; 
+      
+  }
 
   /* 
   SECCIÓN MEDIAS QUERY

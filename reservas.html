@@ -74,14 +74,14 @@
             
             
             <div class="row">
-                <div class="col-xl-5 col-lg-12 col-md-12 mt-5 order-md-2 order-lg-1 mb-5 rounded">
+                <div class="col-xl-5 col-lg-12 col-md-12 mt-5 order-md-2 order-lg-1 mb-5 order-sm-2 rounded">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.8875371046706!2d-71.95442798406842!3d-40.2338026841062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9616cb7be36e647b%3A0x133899f6fb6ae1a1!2sCaba%C3%B1as%20Chabranco!5e0!3m2!1ses!2scl!4v1623356355540!5m2!1ses!2scl" 
                         class="size-map-md"
                         allowfullscreen="" 
                         loading="lazy">
                       </iframe>
                 </div>
-                <div class="col-xl-7 col-lg-12 col-md-12 order-md-1 order-lg-2 mb-5">
+                <div class="col-xl-7 col-lg-12 col-md-12 order-md-1 order-lg-2 mb-5 order-sm-1">
                   <h1 class="text-center mb-5 text-reserva">Consulta por una Reserva</h1>
                     <form id="formReservas" class="row g-4">
                         <div class="col-md-6">
@@ -101,15 +101,23 @@
                           <label for="checkout" class="form-label">Fecha Salida</label>
                           <input type="date" name="checkout" class="form-control" id="checkout">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                           <label for="email" class="form-label">Email</label>
                           <input type="email" name="email" class="form-control" id="email" placeholder="Su email">
                         </div>
-                        
+                        <div class="col-md-4">
+                          <label for="nomcabana" class="form-label">Nombre de Cabaña</label>
+                          <select name="nomcabana" class="form-control">
+                            <option value="chucao">Chucao</option>
+                            <option value="diuca">La Diuca</option>
+                            <option value="tortolos">Los Tórtolos</option>
+                          </select>
+                        </div>
                         <div class="col-md-3">
                           <label for="num_personas" class="form-label">N° de Personas</label>
                           <input type="number" name="numpersonas" class="form-control" id="numpersonas" min="0">
                         </div>
+                        
                         <!--
                           <div class="col-12">
                           <div class="form-check">
@@ -122,7 +130,7 @@
                         
                         -->
                         <div class="col-12">
-                          <button type="submit" class="btn btn-orange">Enviar</button>
+                          <button type="submit" class="btn btn-orange btn-lg">Enviar</button>
                         </div>
                       </form>
                 </div>
@@ -142,15 +150,12 @@
                 <div class="widget-about">
                   <h1 class="logo-font">Cabañas Chabranco</h1>
                   <p>Ven a experimentar la belleza del sur.</p>
-                  <ul class="contact-details">
-                    <li>
-                      <span class="icon-earphones"></span> Contáctanos:
-                      <a href="tel:344-755-111">344-755-111</a>
-                    </li>
-                    <li>
-                      <span class="icon-envelope-open"></span>
-                      <a href="mailto:support@aazztech.com">support@aazztech.com</a>
-                    </li>
+                 
+                  <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook "></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+                    
                   </ul>
                 </div>
               </div>
@@ -189,7 +194,7 @@
                   <h4 class="footer-widget-title text-white">Contáctanos</h4>
                   <ul>
                     <li>
-                      <a href="#"><i class="fas fa-phone blanco"></i> (56) 993330007</a>
+                      <a href="#">(56) 993330007</a>
                     </li>
                     <li>
                       <a href="#">franciscojavierlevin.m@gmail.com</a>
@@ -242,5 +247,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <script src="js/validateInputs.js"></script>
+    <script src="https://kit.fontawesome.com/2506fe6418.js" crossorigin="anonymous"></script>
 </body>
 </html>
