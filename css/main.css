@@ -798,12 +798,12 @@ hr.divider {
     .hero h1 { font-size: 4em; }
     .altura-comp { padding: 50px 0;  }    
     .size-map {
-        width: 400px; 
+        width: 340px; 
         height: 300px;
         border: 0;
     } 
     .size-map-md {
-        width: 400px;
+        width: 350px;
         height: 300px;
         border: 0;
     }
