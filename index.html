@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item separate-from-logo">
-              <a class="nav-link active "  aria-current="page" href="index.html" title="Inicio de la página">Inicio</a>
+              <a class="nav-link active"  aria-current="page" href="index.html" title="Inicio de la página">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="somos.html">Somos</a>
@@ -48,9 +48,9 @@
             
             
           </ul>
-          <form class="d-flex">
+          <div class="d-flex">
             <a class="btn btn-orange" href="reservas.html">Reservar</a>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -74,8 +74,8 @@
             <div class="hero">
               <hgroup>
                   <h1 class="mb-2">Cabañas Chabranco</h1>        
-                  <h3 class="mb-3">Ven a conocer la magia del sur</h3>
-                  <a  href="cabanas.html" class="btn btn-orange btn-lg">Deseo ver las Cabañas!</a>
+                  <h3 class="mb-3 sub-carrusel">Ven a conocer la magia del sur</h3>
+                  <a  href="cabanas.html" class="btn btn-orange">Deseo ver las Cabañas!</a>
               </hgroup>
               
             </div>
@@ -86,8 +86,8 @@
             <div class="hero">
               <hgroup>
                   <h1 class="mb-2">Cabañas Chabranco</h1>        
-                  <h3 class="mb-3">Ven a conocer la magia del sur</h3>
-                  <a  href="cabanas.html" class="btn btn-orange btn-lg">Deseo ver las Cabañas!</a>
+                  <h3 class="mb-3 sub-carrusel">Ven a conocer la magia del sur</h3>
+                  <a  href="cabanas.html" class="btn btn-orange">Deseo ver las Cabañas!</a>
               </hgroup>
               
             </div>
@@ -98,8 +98,8 @@
             <div class="hero">
               <hgroup>
                   <h1 class="mb-2">Cabañas Chabranco</h1>        
-                  <h3 class="mb-3">Ven a conocer la magia del sur</h3>
-                  <a  href="cabanas.html" class="btn btn-orange btn-lg">Deseo ver las Cabañas!</a>
+                  <h3 class="mb-3 sub-carrusel">Ven a conocer la magia del sur</h3>
+                  <a  href="cabanas.html" class="btn btn-orange">Deseo ver las Cabañas!</a>
               </hgroup>
               
             </div>
@@ -125,7 +125,7 @@
     <!--
       
     -->
-    <a href="https://web.whatsapp.com/send?phone=56979712334" class="float" target="_blank">
+    <a class="float" href="https://web.whatsapp.com/send?phone=56979712334" target="_blank" id="whatsapp-btn">
       <i class="fa fa-whatsapp my-float"></i>
     </a>
     <section class="altura-comp mt-5">
@@ -139,7 +139,7 @@
               </p>
             </div>
             <div class="col-md-5">
-              <img class="img-fluid w-100" src="img/cabanas/chucao/entrada.jpg" alt="banner1">
+              <img class="img-fluid w-100 first-img-index" src="img/cabanas/chucao/entrada.jpg" alt="banner1">
             </div>
 			  </div>
 
@@ -155,7 +155,7 @@
           </div>
 				
 				<div class="col-md-5 order-md-1">
-					<img class="img-fluid w-100" src="img/cabanas/tortolos/fuera.jpg" alt="banner1">
+					<img class="img-fluid w-100 second-img-index" src="img/cabanas/tortolos/fuera.jpg" alt="banner1">
 				</div>
 			</div>
 		</div>
@@ -168,14 +168,14 @@
       <div class="container"  data-aos="fade-up" data-aos-duration="1500">
         <div class="row white-bg py-3">
           <!--Sección descripción cabañas-->
-          <div class="col-12 col-sm-4 py-4 px-4">
+          <div class="col-12 col-sm-4 col-md-3 py-4 px-4">
             <h2 class="title-desc ">Visita nuestras Cabañas en Chabranco</h2>
             <p class="desc">Nuestras cabañas son variadas y están equipadas con todo lo que 
               necesites. Elige la que más se acomode a ti!
             </p>
           </div>
 
-          <div class="col-12 col-sm-8 py-4 px-4">
+          <div class="col-12 col-sm-8 col-md-9 py-4 px-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card mt-4 mt-sm-0">
@@ -374,6 +374,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Fade in when appears-->
     <script src="js/scrollWhenAppears.js"></script>
+
+    <!-- CDN Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Script que redirige a whatsapp según tamaño de pantalla -->
+    <script src="js/whatsapp-link.js"></script>
+    
     <script src="https://kit.fontawesome.com/2506fe6418.js" crossorigin="anonymous"></script>
   
   </body>
